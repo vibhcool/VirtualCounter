@@ -1,0 +1,205 @@
+!SESSION Fri Apr 21 23:52:09 IST 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-04-21 23:52:09.891
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-04-21 23:52:09.852 -----------------------------------------------
+eclipse.buildId=4.6.1.v20160915-0852
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-04-21 23:52:10.463
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+
+!ENTRY org.eclipse.jface 2 0 2017-04-21 23:52:26.329
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-21 23:52:26.329
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@63062eea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7bad18f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-21 23:52:26.329
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4407fea2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64e3bc2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:52:28.088
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/abrt is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:52:28.092
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/mylyn-tasks-bugzilla is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:52:28.092
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/epp-logging is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:52:28.093
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/e4-importer is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:52:28.093
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/mylyn-commons is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:52:28.093
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/emf-runtime is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:52:28.093
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/eclipse-pde is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:52:28.093
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/eclipse-cvs is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:52:28.094
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/eclipse-sdk is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:52:28.094
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/eclipse-jdt is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-04-21 23:53:49.458
+!MESSAGE An internal error occurred during: "Validating project2".
+!STACK 0
+java.lang.NoClassDefFoundError: jdk/nashorn/internal/runtime/ECMAException
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:903)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:673)
+	at org.eclipse.wst.jsdt.internal.core.validation.JavaScriptValidator.validate(JavaScriptValidator.java:62)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:810)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:299)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:120)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:105)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.fullBuild(ValBuilderJob.java:219)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:178)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.ClassNotFoundException: jdk.nashorn.internal.runtime.ECMAException cannot be found by org.eclipse.wst.jsdt.core_2.0.200.v201612211424
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 more
+!SESSION Fri Apr 21 23:57:45 IST 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-04-21 23:57:45.744
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-04-21 23:57:45.705 -----------------------------------------------
+eclipse.buildId=4.6.1.v20160915-0852
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-04-21 23:57:46.341
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+
+!ENTRY org.eclipse.jface 2 0 2017-04-21 23:57:54.955
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-21 23:57:54.955
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@34e53c02,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7135e8cd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-21 23:57:54.955
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3efb863c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5527dbb0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:58:00.059
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/abrt is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:58:00.064
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/mylyn-tasks-bugzilla is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:58:00.065
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/epp-logging is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:58:00.065
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/e4-importer is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:58:00.065
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/mylyn-commons is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:58:00.065
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/emf-runtime is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:58:00.065
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/eclipse-pde is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:58:00.065
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/eclipse-cvs is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:58:00.066
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/eclipse-sdk is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2017-04-21 23:58:00.066
+!MESSAGE Fragment directory /usr/share/eclipse/droplets/eclipse-jdt is not read only and will not be scanned for fragments.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-21 23:59:09.043
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
